@@ -5,7 +5,9 @@ node {
   }
 
   stage('list files') {
-    sh 'ls -l'
+    ansiColor('xterm'){
+      sh 'ls -l'
+    }
   }
 
   stage('gradle tasks') {
