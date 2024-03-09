@@ -4,8 +4,12 @@ node {
     checkout scm
   }
 
-  stage('run build') {
+  stage('list files') {
     sh 'ls -l'
+  }
+
+  stage('gradle tasks') {
+    sh './gradlew tasks'
   }
 
 }
