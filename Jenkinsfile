@@ -12,4 +12,8 @@ node {
     sh './gradlew tasks'
   }
 
+  stage('sayHello') {
+    sh './gradlew sayHello'
+  }
+
 }
